@@ -16,8 +16,8 @@ public class ItemApiApplication implements ItemController {
 	}
 
 	@Override
-	public ResponseEntity<?> createItem(){
-		return new ResponseEntity<>("Hello World", HttpStatus.OK);
+	public String createItem(){
+		return "Hello World";
 	}
 
 }

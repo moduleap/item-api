@@ -5,5 +5,5 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 public interface ItemController {
     @PostMapping("/item")
-    ResponseEntity<?> createItem();
+    String createItem();
 }

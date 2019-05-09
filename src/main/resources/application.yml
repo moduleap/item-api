@@ -3,15 +3,18 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+    database: MYSQL
   application:
     name: item-api
   datasource:
-    url: jdbc:mysql://localhost:3306/mydatabase
+    url: jdbc:mysql://localhost:3307/items?allowPublicKeyRetrieval=true&useSSL=FALSE
     username: user
     password: user
+    driverClassName: com.mysql.cj.jdbc.Driver
 
 server:
   port: 0
+
 
 eureka:
   client:
@@ -20,3 +23,4 @@ eureka:
   instance:
     preferIpAddress: true
     instanceId: ${random.value}
+

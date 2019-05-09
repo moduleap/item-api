@@ -16,7 +16,7 @@ public class Item {
     @Column
     private String name;
     @Column
-    private String desc;
+    private String description;
     @Column
     private Timestamp creationDate;
     @Column
